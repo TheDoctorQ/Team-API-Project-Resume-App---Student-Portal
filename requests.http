@@ -1,0 +1,5 @@
+### resume show
+GET http://localhost:3000/resumes/1.json
+
+### resume update
+PATCH http://localhost:3000/resumes/1.json
