@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   get "/resumes/:id" => "resumes#show"
   patch "/resumes/:id" => "resumes#update"
+
+  get "/capstones/:id" => "capstones#show"
+  patch "/capstones/:id" => "capstones#update"
 end
