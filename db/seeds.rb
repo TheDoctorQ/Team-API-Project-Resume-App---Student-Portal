@@ -50,13 +50,13 @@
   # )
   # skill.save
 
-  # capstone = Capstone.new(
-  #   student_id: 1,
-  #   name: "Facebook",
-  #   description: "like facebook but better",
-  #   url: "www.facebook.com",
-  #   screenshot: "www.facebook.com" )
+  capstone = Capstone.new(
+    student_id: 1,
+    name: "Facebook",
+    description: "like facebook but better",
+    url: "www.facebook.com",
+    screenshot: "www.facebook.com" )
   
-  # capstone.save
+  capstone.save
 
 # end
