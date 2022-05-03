@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   get "/capstones/:id" => "capstones#show"
   patch "/capstones/:id" => "capstones#update"
+
+  post "/sessions" => "sessions#create"
 end

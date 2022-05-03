@@ -5,22 +5,22 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-5.times do 
-  # student = Student.new(
-  #   first_name: "magic",
-  #   last_name: "johnson",
-  #   email: "magic@johnson.com",
-  #   phone_number: "3261542322",
-  #   short_bio: "basketball superstar",
-  #   linkedin_url: "linkedin.com/magicjohnson",
+# 5.times do 
+  student = Student.new(
+    first_name: "magic",
+    last_name: "johnson",
+    email: "magic@johnson.com",
+    phone_number: "3261542322",
+    short_bio: "basketball superstar",
+    linkedin_url: "linkedin.com/magicjohnson",
  
-  #   twitter_handle: "@magic",
-  #   personal_website: "magicjohnson.com",
-  #   github_url: "github.com/magicjohnson",
-  #   photo_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9_Gmt-2QzNPRDLYGMQWnfwHaD3%26pid%3DApi&f=1"
-
-  # )
-  # student.save 
+    twitter_handle: "@magic",
+    personal_website: "magicjohnson.com",
+    github_url: "github.com/magicjohnson",
+    photo_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9_Gmt-2QzNPRDLYGMQWnfwHaD3%26pid%3DApi&f=1",
+    password: "password"
+  )
+  student.save!
 
   
   
@@ -50,13 +50,13 @@
   # )
   # skill.save
 
-  capstone = Capstone.new(
-    student_id: 1,
-    name: "Facebook",
-    description: "like facebook but better",
-    url: "www.facebook.com",
-    screenshot: "www.facebook.com" )
+  # capstone = Capstone.new(
+  #   student_id: 1,
+  #   name: "Facebook",
+  #   description: "like facebook but better",
+  #   url: "www.facebook.com",
+  #   screenshot: "www.facebook.com" )
   
-  capstone.save
+  # capstone.save
 
-end
+# end
