@@ -3,3 +3,18 @@ GET http://localhost:3000/resumes/1.json
 
 ### resume update
 PATCH http://localhost:3000/resumes/1.json
+Content-Type: application/json
+
+{
+  "education_start_date" : "05/13/2019",
+  "education_end_date" : "07/13/2019",
+  "education_degree" : "coding",
+  "education_university_name" : "WWU",
+  "education_details" : "learned to code",
+
+  "experience_start_date" : "09/20/2020",
+  "experience_end_date" : "10/19/2021",
+  "experience_job_title" : "tech",
+  "experience_company_name" : "tech company",
+  "experience_details" : "did tech stuff"
+}
