@@ -24,6 +24,11 @@ GET http://localhost:3000/capstones/1.json
 
 ### capstone update
 PATCH http://localhost:3000/capstones/1.json
+Content-Type: application/json
+
+{
+  "name": "cappiestofstones"
+}
 
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
