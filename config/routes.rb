@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   patch "/capstones/:id" => "capstones#update"
 
   post "/sessions" => "sessions#create"
+  
 end
