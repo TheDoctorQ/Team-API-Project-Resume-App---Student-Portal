@@ -18,3 +18,9 @@ Content-Type: application/json
   "experience_company_name" : "tech company",
   "experience_details" : "did tech stuff"
 }
+
+### capstone show
+GET http://localhost:3000/capstones/1.json
+
+### capstone update
+PATCH http://localhost:3000/capstones/1.json
