@@ -7,7 +7,8 @@ class ResumesController < ApplicationController
     student = Student.find_by(id: params[:id])
     education = Education.find_by(student_id: student.id)
     experience = Experience.find_by(student_id: student.id)
-    resume = {education: education, experience: experience}
+    skill = Skill.find_by(student_id: student.id)
+    resume = {education: education, experience: experience, skill: skill}
     render json: resume.as_json
   end
 
@@ -29,9 +30,13 @@ class ResumesController < ApplicationController
     experience.job_title = params[:experience_job_title] || experience.job_title
     experience.company_name = params[:experience_company_name] || experience.company_name
     experience.details = params[:experience_details] || experience.details
+
+    skill = Skill.find_by(student_id: student.id)
+    skill.student_id = student.id
+    skill.student_id = params[:skill]
     
-    if education.save && experience.save
-      resume = {education: education, experience: experience}
+    if education.save && experience.save && skill.save
+      resume = {education: education, experience: experience, skill: skill}
 
       render json: resume.as_json 
     end
