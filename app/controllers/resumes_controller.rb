@@ -1,7 +1,10 @@
 class ResumesController < ApplicationController
 
   def show
-    resume = Resume.find_by(id: params[:id])
+    student = Student.find_by(id: params[:id])
+    education = Education.find_by(student_id: student.id)
+    experience = Experience.find_by(student_id: student.id)
+    resume = {education: education, experience: experience}
     render json: resume.as_json
   end
 
